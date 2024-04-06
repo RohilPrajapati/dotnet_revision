@@ -1,0 +1,15 @@
+/home/rohil/rohil/dotnet_prac/dotnet_revision/bin/Debug/net8.0/dotnet_revision
+/home/rohil/rohil/dotnet_prac/dotnet_revision/bin/Debug/net8.0/dotnet_revision.deps.json
+/home/rohil/rohil/dotnet_prac/dotnet_revision/bin/Debug/net8.0/dotnet_revision.runtimeconfig.json
+/home/rohil/rohil/dotnet_prac/dotnet_revision/bin/Debug/net8.0/dotnet_revision.dll
+/home/rohil/rohil/dotnet_prac/dotnet_revision/bin/Debug/net8.0/dotnet_revision.pdb
+/home/rohil/rohil/dotnet_prac/dotnet_revision/obj/Debug/net8.0/dotnet_revision.GeneratedMSBuildEditorConfig.editorconfig
+/home/rohil/rohil/dotnet_prac/dotnet_revision/obj/Debug/net8.0/dotnet_revision.AssemblyInfoInputs.cache
+/home/rohil/rohil/dotnet_prac/dotnet_revision/obj/Debug/net8.0/dotnet_revision.AssemblyInfo.cs
+/home/rohil/rohil/dotnet_prac/dotnet_revision/obj/Debug/net8.0/dotnet_revision.csproj.CoreCompileInputs.cache
+/home/rohil/rohil/dotnet_prac/dotnet_revision/obj/Debug/net8.0/dotnet_revision.sourcelink.json
+/home/rohil/rohil/dotnet_prac/dotnet_revision/obj/Debug/net8.0/dotnet_revision.dll
+/home/rohil/rohil/dotnet_prac/dotnet_revision/obj/Debug/net8.0/refint/dotnet_revision.dll
+/home/rohil/rohil/dotnet_prac/dotnet_revision/obj/Debug/net8.0/dotnet_revision.pdb
+/home/rohil/rohil/dotnet_prac/dotnet_revision/obj/Debug/net8.0/dotnet_revision.genruntimeconfig.cache
+/home/rohil/rohil/dotnet_prac/dotnet_revision/obj/Debug/net8.0/ref/dotnet_revision.dll
