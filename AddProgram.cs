@@ -2,7 +2,7 @@ using System;
 
 namespace MyApp
 {
-    internal class AddProgram
+    class AddProgram
     {
         static void Main(string[] args)
         {
