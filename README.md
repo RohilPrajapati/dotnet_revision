@@ -121,6 +121,83 @@ Operators are used to perform operations on variables and values.
 - ```||``` logical or 
 - ```!``` logical not 
 
+*** 
+### String Operation
+
+-  to get length of string ```Length```
+```cs 
+string str = "Hello World";
+int len = str.Length;
+Console.WriteLine("length :"+ len);
+```
+
+- to join two string using ```Concat(str1,str2)```
+```cs
+string str1 = "Hello ";
+string str2 = "World";
+string join_string = string.Concat(str1,str2);
+Console.WriteLine(join_string);
+```
+
+- comparing two string ```Equals()```
+```cs
+// create string
+string str1 = "Hello World";
+string str2 = "Hello World";
+string str3 = "World";
+
+// compare str1 and str2
+Boolean result1 = str1.Equals(str2);
+Console.WriteLine("string str1 and str2 are equal: " + result1);
+
+//compare str1 and str3
+Boolean result2 = str1.Equals(str3);
+Console.WriteLine("string str1 and str3 are equal: " + result2); 
+```
+
+**String Escape Sequences**
+
+The escape character is used to escape some of the characters present inside the string we use escape sequences to insert special character inside the string. ```\'``` single quote,```\"``` double quote, ```\\``` backslash, ```\0``` null,```\n``` new line,```\t``` horizontal tab
+
+**String interpolation**
+
+In C# we can use string interpolation to insert variables inside the string. String literal must begin with ```$``` character.
+
+```cs
+string name = "Rohil";
+string message = $"Hello, {name}";
+```
+
+**String Methods**
+- ```ToUpper``` and ```ToLower```
+```cs
+string s = "Hello World";
+Console.WriteLine(s.ToUpper());  // Output: HELLO WORLD
+Console.WriteLine(s.ToLower());  // Output: hello world
+```
+- ```Trim```
+```cs
+string s = "  hello world  ";
+Console.WriteLine(s.Trim());  // Output: hello world
+```
+- ```Split```
+```cs
+string s = "apple,banana,cherry";
+string[] fruits = s.Split(','); // return array
+```
+- ```Join```
+```cs
+string[] fruits = { "apple", "banana", "cherry" };
+string s = string.Join(",", fruits);
+```
+- ```string.StartsWith(prefix)``` and ```string.EndsWith(suffix)```
+```cs
+string s = "Hello World";
+Console.WriteLine(s.StartsWith("Hello"));  // Output: True
+Console.WriteLine(s.EndsWith("World"));   // Output: True
+```
+
+
 
 
 
