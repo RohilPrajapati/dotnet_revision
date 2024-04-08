@@ -197,7 +197,104 @@ Console.WriteLine(s.StartsWith("Hello"));  // Output: True
 Console.WriteLine(s.EndsWith("World"));   // Output: True
 ```
 
+***
+### Conditional
+- ```if```
+- ```else```
+- ```else if```
+- ```?```, ```:``` Ternary operator
+- ```switch```
 
+Example
+```cs
+// example of if
+int time = 20;
+if (time == 20){
+    Console.WriteLine("Time is 20")
+}
+```
 
+```cs
+// example of if else
+if (time < 18) 
+{
+  Console.WriteLine("Good day.");
+} 
+else 
+{
+  Console.WriteLine("Good evening.");
+}
+```
+```cs
+// example of else if
+int time = 22;
+if (time < 10) 
+{
+  Console.WriteLine("Good morning.");
+} 
+else if (time < 20) 
+{
+  Console.WriteLine("Good day.");
+} 
+else 
+{
+  Console.WriteLine("Good evening.");
+}
+```
 
+```cs
+//ternary operator
+int time = 20;
+string result = (time < 18) ? "Good day." : "Good evening.";
+Console.WriteLine(result);
+```
+```cs
+int day = 4;
+switch (day) 
+{
+  case 1:
+    Console.WriteLine("Monday");
+    break;
+  case 2:
+    Console.WriteLine("Tuesday");
+    break;
+  case 3:
+    Console.WriteLine("Wednesday");
+    break;
+  default:
+    console.WriteLine("Invalid number");
+    break;
+}
+```
+
+### loops
+- while ```while```
+```cs
+while (condition) 
+{
+  // code block to be executed
+}
+```
+- do while loop ```do``` ```while```
+```cs
+do 
+{
+  // code block to be executed
+}
+while (condition);
+```
+- for loop ```for```
+```cs
+for (initialized; condition; increment) 
+{
+  // code block to be executed
+}
+```
+- foreach loop ```foreach```
+```cs
+foreach (type variableName in arrayName) 
+{
+  // code block to be executed
+}
+```
 
