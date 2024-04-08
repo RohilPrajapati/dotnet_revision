@@ -11,7 +11,7 @@ colz dotnet practice
 - change the "ClassNameYouWantToRun" to class/file you want to run
 
 ## Notes from w3School
-***
+
 ### C# Type Casting
 
 Type casting is when you assign a value of one data type to another type.
@@ -266,8 +266,8 @@ switch (day)
     break;
 }
 ```
-
-### loops
+***
+### Loops
 - while ```while```
 ```cs
 while (condition) 
@@ -297,4 +297,162 @@ foreach (type variableName in arrayName)
   // code block to be executed
 }
 ```
+***
+### Array
 
+Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+
+```cs
+string[] cars;
+// or with values
+string[] cars = {"Volvo","BMW","Ford"};
+
+// number array
+int[] nums = {1,2,3,4,5};
+```
+
+**Accessing array**
+```cs
+string[] cars = {"Volvo","BMW","Ford"};
+Console.WriteLine(cars[1]); // output : BMW
+```
+
+**Changing element**
+```cs
+cars[1] = "GTR";
+Console.WriteLine(cars[1]); // output : GTR
+```
+**Get Length of Array**
+```cs
+Console.WriteLine(cars.Length); // output: 3
+```
+
+Note: If you declare an array and initialize it later, you have to use the new keyword:
+
+```cs
+// Declare an array
+string[] cars;
+
+// Add values, using new
+cars = new string[] {"Volvo", "BMW", "Ford"};
+
+// Add values without using new (this will cause an error)
+cars = {"Volvo", "BMW", "Ford"};
+```
+
+**Sort Array**
+
+To sort array in c# there is method ```Sort()```
+
+```cs
+Array.Sort(cars);
+```
+
+**System.Linq Namespace**
+
+Other useful array methods, such as ```Min```, ```Max```, and ```Sum```, can be found in the System.Linq namespace:
+
+```cs
+int[] myNumbers = {5, 1, 8, 9};
+Console.WriteLine(myNumbers.Max());  // returns the largest value
+Console.WriteLine(myNumbers.Min());  // returns the smallest value
+Console.WriteLine(myNumbers.Sum());  // returns the sum of elements
+```
+
+**Multi dimensional Array**
+
+```cs
+int[,] numbers = { {1, 4, 2}, {3, 6, 8} };
+```
+***
+### Methods
+
+define methods in c#
+```cs
+class Program
+{
+    static void MyMethod()
+    {
+        // code 
+        Console.WriteLine("Hello World");
+    }
+}
+```
+call the above method in main method
+```cs
+static void Main()
+{
+    MyMethod(); // output: "Hello World"
+}
+```
+**Parameterized Method**
+
+```cs
+void MyGreeting(string name)
+{
+    Console.WriteLine($"Hello {name}");
+}
+
+static void Main(string[] args)
+{
+    MyGreeting("Rohil"); // output: Hello Rohil
+    MyGreeting("Test"); //output: Hello Test
+}
+```
+
+**Default Parametrized**
+```cs
+void MyGreeting(string name = "World")
+{
+    console.WriteLine($"Hello {name}");
+}
+```
+
+**Return Value with multiple params**
+
+```cs
+int AddNum(int num1,int num2)
+{
+    return num1+num2;
+}
+static void Main(string[] args)
+{
+    int result = AddNum(3,5); 
+    Console.WriteLine($"Result {result}") // output: 8
+}
+```
+
+**Named Argument**
+```cs
+void MyMethod(string child1, string child2, string child3) 
+{
+  Console.WriteLine("The youngest child is: " + child3);
+}
+
+static void Main(string[] args)
+{
+  MyMethod(child3: "John", child1: "Liam", child2: "Liam");
+}
+```
+**Method Overloading**
+
+Same class method can have same name if return types, number of params and type of params is different;
+```cs
+static int PlusMethod(int x, int y)
+{
+  return x + y;
+}
+
+static double PlusMethod(double x, double y)
+{
+  return x + y;
+}
+
+static void Main(string[] args)
+{
+  int myNum1 = PlusMethod(8, 5);
+  double myNum2 = PlusMethod(4.3, 6.26);
+  Console.WriteLine("Int: " + myNum1);
+  Console.WriteLine("Double: " + myNum2);
+}
+```
