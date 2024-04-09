@@ -456,3 +456,81 @@ static void Main(string[] args)
   Console.WriteLine("Double: " + myNum2);
 }
 ```
+***
+### OOP (Classes)
+
+**Creating Class**
+```cs
+class Car
+{
+    public string color = "Red";
+}
+```
+
+**Creating object of Class(Instantiating)**
+```cs
+class  Program
+{
+    static void Main(string[] args)
+    {
+        Car obj = new Car();
+        Console.WriteLine(obj.color); //output : Red
+
+        // we  can create mutliple objects
+        Car secondObj = new Car();
+        Console.WriteLine(secondObj.color); //output : Red
+    }
+}
+```
+
+**Class Member**
+
+Fields and methods inside classes are often referred to as "Class Members"
+```cs
+class MyClass
+{
+  // Class members
+  string color = "red";        // field
+  int maxSpeed = 200;          // field
+  public void fullThrottle()   // method
+  {
+    Console.WriteLine("The car is going as fast as it can!");
+  }
+}
+```
+
+**Constructor**
+
+A constructor is a special method that is used to initialize objects. The advantage of a constructor, is that it is called when an object of a class is created
+
+```cs
+class Car
+{
+  public string model;  // Create a field
+
+  // Create a class constructor for the Car class
+  public Car()
+  {
+    model = "GTR"; // Set the initial value for model
+  }
+}
+// main program
+class Program
+{
+    static void Main(string[] args)
+    {
+        Car obj = new Car();
+        Console.WriteLine("Model: "obj.model); //output: GTR
+    }
+}
+```
+**Parameterized Constructor**
+```cs
+class Car
+{    
+    public Car(string modelName)
+    {
+        model = modelName;
+    }
+}
+```
