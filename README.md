@@ -534,3 +534,77 @@ class Car
     }
 }
 ```
+**Access Modifiers**
+- ```public``` The code is accessible for all the class
+- ```private``` The code is only accessible with the same  class
+- ```protected``` The code is accessible within the same class, or in a  class that is inherited from that class.
+-  ```internal``` The code is only accessible within its own assembly, but not from other assembly.
+
+**Properties and Encapsulation**
+
+The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To achieve this, you must:
+
+- declare fields/variables as ```private```
+- provide ```public``` ```get``` and ```set``` methods, through properties, to access and update the value of a ```private``` field
+
+
+A property is like a combination of a variable and a method, and it has two methods: a get and a set method:
+
+```cs
+class Person
+{
+  private string name; // field
+
+  public string Name   // property
+  {
+    get { return name; }   // get method
+    set { name = value; }  // set method
+  }
+}
+```
+
+Example:
+```cs
+class Person
+{
+  private string name; // field
+  public string Name   // property
+  {
+    get { return name; }
+    set { name = value; }
+  }
+}
+
+class Program
+{
+  static void Main(string[] args)
+  {
+    Person myObj = new Person();
+    myObj.Name = "Liam";
+    Console.WriteLine(myObj.Name);
+  }
+}
+```
+shorthand: same as above class but with less line of code
+```cs
+class Person
+{
+  public string Name  // property
+  { get; set; }
+}
+```
+**Why Encapsulation?**
+
+- Better control of class members (reduce the possibility of yourself (or others) to mess up the code)
+- Fields can be made read-only (if you only use the get method), or write-only (if you only use the set method)
+- Flexible: the programmer can change one part of the code without affecting other parts
+- Increased security of data
+
+**Inheritance**
+
+In C#, it is possible to inherit fields and methods from one class to another. We group the "inheritance concept" into two categories:
+
+- **Derived Class (child)** - the class that inherits from another class
+- **Base Class (parent)** - the class being inherited from
+
+To inherit from a class, use the ```:``` symbol.
